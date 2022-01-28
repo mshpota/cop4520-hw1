@@ -1,0 +1,68 @@
+Upper limit is = 0
+Execution time = 3 ms
+Total number of primes found = 0
+Sum of all primes found = 0
+
+Upper limit is = 2
+Execution time = 3 ms
+Total number of primes found = 1
+Sum of all primes found = 2
+
+Upper limit is = 4
+Execution time = 4 ms
+Total number of primes found = 2
+Sum of all primes found = 5
+
+Upper limit is = 5
+Execution time = 3 ms
+Total number of primes found = 3
+Sum of all primes found = 10
+
+Upper limit is = 10
+Execution time = 3 ms
+Total number of primes found = 4
+Sum of all primes found = 17
+
+Upper limit is = 100
+Execution time = 3 ms
+Total number of primes found = 25
+Sum of all primes found = 1060
+
+Upper limit is = 1000
+Execution time = 3 ms
+Total number of primes found = 168
+Sum of all primes found = 76127
+
+Upper limit is = 10000
+Execution time = 5 ms
+Total number of primes found = 1229
+Sum of all primes found = 5736396
+
+Upper limit is = 100000
+Execution time = 11 ms
+Total number of primes found = 9592
+Sum of all primes found = 454396537
+
+Upper limit is = 1000000
+Execution time = 52 ms
+Total number of primes found = 78498
+Sum of all primes found = 37550402023
+
+Upper limit is = 10000000
+Execution time = 452 ms
+Total number of primes found = 664579
+Sum of all primes found = 3203324994356
+
+Upper limit is = 100000000
+Execution time = 9462 ms
+Total number of primes found = 5761455
+Sum of all primes found = 279209790387276
+
+Upper limit is = 1000000000
+Execution time = 247295 ms
+Total number of primes found = 50847534
+Sum of all primes found = 24739512092254535
+
+
+
+

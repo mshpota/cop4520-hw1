@@ -36,7 +36,7 @@ public class PrimeNumbersFinder {
     StringBuilder last10Primes = new StringBuilder();
 
     // Find last ten primes in the array of numbers.
-    for (int i = SharedData.UPPERLIMIT - 1, count = 10; i >= 2 && count > 0; i--) {
+    for (int i = SharedData.UPPERLIMIT, count = 10; i >= 2 && count > 0; i--) {
       if (SharedData.numbers[i] == true) {
         // Insert each new string at 0 index to create increasing order.
         last10Primes.insert(0, String.valueOf(i) + "\n");
@@ -47,8 +47,7 @@ public class PrimeNumbersFinder {
     // Write to file.
     try (BufferedWriter bw = new BufferedWriter(new FileWriter(filename))) {
       bw.write("Execution time = " + String.valueOf(executionTime) + " ms" +
-               "\nTotal number of primes found = " +
-               String.valueOf(SharedData.numOfPrimes) +
+               "\nTotal number of primes found = " + SharedData.numOfPrimes +
                "\nSum of all primes found = " + SharedData.sumOfPrimes +
                "\nTop ten maximum primes:\n" + last10Primes.toString());
     } catch (FileNotFoundException e) {
@@ -65,7 +64,7 @@ public class PrimeNumbersFinder {
 // from Java's atomic package.
 class SharedData {
   static final int UPPERLIMIT = 100000000;
-  static boolean [] numbers = new boolean[UPPERLIMIT];
+  static boolean [] numbers = new boolean[UPPERLIMIT + 1];
   static AtomicInteger counter = new AtomicInteger(2);
   static AtomicInteger numOfPrimes = new AtomicInteger(0);
   static AtomicLong sumOfPrimes = new AtomicLong(0);
@@ -83,7 +82,7 @@ class PrimeFinderThread implements Runnable {
     // Get the number to check for primality.
     int primeCandidate = SharedData.counter.getAndIncrement();
 
-    while (primeCandidate < SharedData.UPPERLIMIT) {
+    while (primeCandidate <= SharedData.UPPERLIMIT) {
 
       if (isPrime(primeCandidate)) {
         SharedData.sumOfPrimes.addAndGet(primeCandidate);

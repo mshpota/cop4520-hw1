@@ -8,9 +8,9 @@ The idea for the solution was taken from this source[^1] presented in ch. 1.1. T
 
 ### NOTES ON EFFICIENCY
 
-Even though this solution provides an even distribution of work between threads, it is not an efficient way because it is using a lot of repeated computations. This is because it checks each number for primality (though the algorithm that is used for these checks is optimized[^2]). Space complexity could also be improved with data structures that are designed to work in a multi-threaded environment to store just the prime numbers.
+Even though this solution provides an even distribution of work between threads, it is not an efficient way because it is using a lot of repeated computations. This is because it checks each number for primality (though the algorithm that is used for these checks is optimized[^2]). Space complexity could also be improved with data structures that are designed to work in a multi-threaded environment since only the last ten prime numbers need to be stored.
 
-When running this program on my computer, I was getting execution times around 9000 -10000 ms. In comparison, a single-threaded program using the classic algorithm Sieve of Eratosthenes was able to accomplish the same task in less than 1000 ms!
+When running this program on my computer, I was getting execution times around 9000 -10000 ms. In comparison, a single-threaded program using the classic algorithm Sieve of Eratosthenes was able to accomplish the same task in less than 1000 ms! More results of testing could be found in file `test-output.txt`.
 
 ### HOW TO RUN
 
