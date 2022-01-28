@@ -6,7 +6,6 @@ import java.util.concurrent.CountDownLatch;
 public class PrimeNumbersFinder {
 
   public static void main(String [] args) {
-
     // Use CountDownLatch to wait for all 8 threads to finish execution.
     CountDownLatch cdLatch = new CountDownLatch(8);
 
