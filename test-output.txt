@@ -62,7 +62,3 @@ Upper limit is = 1000000000
 Execution time = 247295 ms
 Total number of primes found = 50847534
 Sum of all primes found = 24739512092254535
-
-
-
-
